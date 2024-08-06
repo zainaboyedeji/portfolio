@@ -2,22 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-text 10s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
-body {
-
-}
 
 
-@layer utilities {
-  .text-balance {
-  }
-}

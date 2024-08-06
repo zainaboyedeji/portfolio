@@ -10,7 +10,7 @@ export default function Projects() {
     {
       id: 1,
       title: "WEB DESIGN",
-      logo: LendsqrLogo,
+      logo: BeautyHubLogo,
       description: "Worlds first scheduling appp",
       banner: BeautyHubBanner,
     },
@@ -24,7 +24,7 @@ export default function Projects() {
     {
       id: 1,
       title: "WEB DESIGN",
-      logo: LendsqrLogo,
+      logo: BeautyHubLogo,
       description: "Worlds first scheduling appp",
       banner: BeautyHubBanner,
     },
