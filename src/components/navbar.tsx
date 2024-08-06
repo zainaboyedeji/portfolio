@@ -1,21 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Button from "./button";
 
 export default function Navbar() {
-    return (
-        <main className="flex justify-between">
-            <div>
-            <Image src="/images/avatar.svg"
-            width="50"
-            height="50"
-            alt="zainab-avatar" />
-            </div>
-            <div>
-                <Link href="/">Home</Link>
-                <Link href="/">Projects</Link>
-                <Link href="/">Contacts</Link>
-            </div>
-        </main>
-    );
+  return (
+    <main className="flex justify-between">
+      <div className="flex">
+        <Image
+          src="/images/avatar.svg"
+          width="50"
+          height="50"
+          alt="zainab-avatar"
+        />
+        <span className="font-bold mt-4 ml-4">ZAINAB</span>
+      </div>
+      <div className="flex justify-center items-center gap-6 w-2/5">
+        <Link href="/">Work</Link>
+        <Link href="/">Tools</Link>
+        <Link href="/">Skills</Link>
+        <Link href="/">Testimonials</Link>
+        <Link href="/">Blog</Link>
+        <Link href="/">
+          <Button text="Contact" ariaLabel="Contact Button" primary />
+        </Link>
+      </div>
+    </main>
+  );
 }
