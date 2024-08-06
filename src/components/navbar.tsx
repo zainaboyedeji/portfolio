@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./button";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <main className="flex justify-between">
       <div className="flex">
@@ -27,3 +27,5 @@ export default function Navbar() {
     </main>
   );
 }
+
+export default Navbar;

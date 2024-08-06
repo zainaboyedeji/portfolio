@@ -5,8 +5,8 @@ import LendsqrBanner from "../../public/images/lendsqr-banner.svg";
 import Image from "next/image";
 import Button from "./button";
 
-export default function Projects() {
-  const projects = [
+const Projects = () => {
+    const projects = [
     {
       id: 1,
       title: "WEB DESIGN",
@@ -71,3 +71,5 @@ export default function Projects() {
     </main>
   );
 }
+
+export default Projects;

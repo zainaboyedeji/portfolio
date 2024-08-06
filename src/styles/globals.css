@@ -5,7 +5,7 @@
 .scrolling-text {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-text 10s linear infinite;
+  animation: scroll-text 40s linear infinite;
 }
 
 @keyframes scroll-text {

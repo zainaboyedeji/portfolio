@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ScrollingText = () => {
+const LetsWorkTogether = () => {
   const text = "Let's Work Together"
   const repeatedText = text.repeat(10); 
 
@@ -13,4 +13,4 @@ const ScrollingText = () => {
   );
 };
 
-export default ScrollingText;
+export default LetsWorkTogether;

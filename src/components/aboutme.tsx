@@ -1,7 +1,7 @@
 import Projects from "./projects";
 import Button from "./button";
 
-export default function AboutMe() {
+const AboutMe = () => {
   return (
     <main className="p-20 mt-20 text-center aboutMe bg-gradient-to-r from-[#F4EDFF] to-[#FCEBEF] rounded-[80px]">
       <div>
@@ -23,3 +23,5 @@ export default function AboutMe() {
     </main>
   );
 }
+
+export default AboutMe;
