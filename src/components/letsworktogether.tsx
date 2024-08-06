@@ -7,7 +7,7 @@ const LetsWorkTogether = () => {
   return (
     <div className="overflow-hidden whitespace-nowrap">
       <div className="scrolling-text text-black text-6xl font-bold px-6 py-2">
-        {repeatedText}
+        {repeatedText} 
       </div>
     </div>
   );

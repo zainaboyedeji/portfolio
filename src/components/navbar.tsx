@@ -10,7 +10,7 @@ const Navbar = () => {
           src="/images/avatar.svg"
           width="50"
           height="50"
-          alt="zainab-avatar"
+          alt="Zainab Avatar"
         />
         <span className="font-bold mt-4 ml-4">ZAINAB</span>
       </div>
@@ -26,6 +26,6 @@ const Navbar = () => {
       </div>
     </main>
   );
-}
+};
 
 export default Navbar;
