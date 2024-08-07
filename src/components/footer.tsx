@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <main className="mt-10">
+    <main className="mt-10 bg-gradient-to-r from-[#FAF8FC] to-[#F4EFFF] p-10 rounded-2xl">
       <h1 className="font-bold text-6xl">Send me a <br/>message</h1>
       <div className="mt-10 flex justify-between">
         <div>

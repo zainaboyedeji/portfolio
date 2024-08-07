@@ -3,8 +3,8 @@ import Image from "next/image";
 const ProgrammingLanguages = () => {
   const data = [
     {
-      logoSrc: "/images/react-logo.svg",
-      title: "React",
+      logoSrc: "/images/nextjs-logo.svg",
+      title: "Next JS",
       description: "Web design & development",
     },
     {
@@ -13,23 +13,23 @@ const ProgrammingLanguages = () => {
       description: "Communication ",
     },
     {
-      logoSrc: "/images/react-logo.svg",
-      title: "React",
+      logoSrc: "/images/figma-logo.svg",
+      title: "Figma",
+      description: "UX/UI Design & Prototyping",
+    },
+    {
+      logoSrc: "/images/nodejs-logo.svg",
+      title: "Node JS",
       description: "Web design & development",
     },
     {
-      logoSrc: "/images/react-logo.svg",
-      title: "React",
+      logoSrc: "/images/typescript-logo.svg",
+      title: "Typescript",
       description: "Web design & development",
     },
     {
-      logoSrc: "/images/react-logo.svg",
-      title: "React",
-      description: "Web design & development",
-    },
-    {
-      logoSrc: "/images/react-logo.svg",
-      title: "React",
+      logoSrc: "/images/vscode-logo.svg",
+      title: "VS Code",
       description: "Web design & development",
     },
   ];

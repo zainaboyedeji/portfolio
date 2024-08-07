@@ -6,66 +6,57 @@ import Image from "next/image";
 export const partners = [
     {
       id: 1,
-      src: "/images/slack-logo.svg",
-      width: 120,
-      height: 42,
-      alt: "Tech pay logo",
+      src: "/images/treepz-logo.svg",
+      width: 180,
+      height: 50,
+      alt: "Treepz logo",
     },
     {
       id: 2,
-      src: "/images/slack-logo.svg",
-      width: 85,
-      height: 65,
-      alt: "Paddy cover logo",
+      src: "/images/uniswitch-logo.svg",
+      width: 180,
+      height: 50,
+      alt: "Uniswitch logo",
     },
     {
       id: 3,
-      src: "/images/slack-logo.svg",
+      src: "/images/devcareer-logo.svg",
       width: 180,
       height: 50,
-      alt: "VFD logo",
+      alt: "Dev Career logo",
     },
     {
       id: 4,
-      src: "/images/slack-logo.svg",
-      width: 171,
-      height: 61,
-      alt: "Pesa logo",
-    },
-    {
-      id: 8,
-      src: "/images/slack-logo.svg",
-      width: 99,
+      src: "/images/moove-logo.svg",
+      width: 180,
       height: 50,
-      alt: "Nibss logo",
+      alt: "Moove logo",
     },
     {
       id: 5,
-      src: "/images/slack-logo.svg",
-      width: 99,
-      height: 38,
-      alt: "Parallex logo",
+      src: "/images/ribylogo.svg",
+      width: 180,
+      height: 50,
+      alt: "Riby logo",
     },
     {
       id: 6,
-      src: "/images/slack-logo.svg",
-      width: 119,
-      height: 34,
-      alt: "Moneymaster logo",
-    },
-    {
-      id: 7,
-      src: "/images/slack-logo.svg",
-      width: 140,
-      height: 51,
-      alt: "VFD bank logo",
+      src: "/images/shr-logo.svg",
+      width: 180,
+      height: 50,
+      alt: "Seamless HR logo",
     },
   ];
 
 const Brands = () => {
     return (
+      <div className="mt-6">
+        <div className="w-full flex justify-center">
+        <h6 className="bg-gradient-to-r from-[#FAF8FC] to-[#F4EFFF] border px-4 py-2 rounded-full border-white text-center">
+        Trusted by Companies and Partners
+        </h6>
+      </div>
         <div className="mt-12 flex flex-col xl:block items-center xl:mb-0 overflow-hidden whitespace-nowrap relative">
-        <p className="font-black">Trusted by Companies and Partners</p>
         <motion.div
           animate={{ x: ["0%", "-150%"] }}
           transition={{
@@ -94,6 +85,7 @@ const Brands = () => {
             />
           ))}
         </motion.div>
+      </div>
       </div>
     );
   }

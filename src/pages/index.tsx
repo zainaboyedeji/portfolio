@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import ProgrammingLanguages from "@/components/programminglanguages";
 import AboutMeSection from "@/components/aboutme-section";
 import Brands from "@/components/brands";
+import Testimonials from "@/components/testimonials";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function Home() {
     <AboutMe/>
     <Brands/>
     <ProgrammingLanguages/>
+    <Testimonials/>
     <AboutMeSection/>
     <LetsWorkTogether/>
     <Footer/>
