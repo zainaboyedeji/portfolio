@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@motionone/utils": "^10.18.0",
+    "@studio-freight/lenis": "^1.0.42",
     "framer-motion": "^11.3.21",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.77.8"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,5 +1,6 @@
 import Projects from "./projects";
 import Button from "./button";
+import Offerings from "./sample";
 
 const AboutMe = () => {
   return (
@@ -19,8 +20,8 @@ const AboutMe = () => {
           <Button text="About Me" ariaLabel="About Me Button" className="ml-5 text-[#140533] border-2 border-[#140533]" />
         </div>
       </div>
-      <Projects />
-    </main>
+      <Offerings/>
+      </main>
   );
 }
 
