@@ -1,18 +1,17 @@
-"use client";
 import styles from "./page.module.scss";
 import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
-import Card from "@/components/Card";
-import BeautyHubLogo from "../../public/images/beautyhub-logo.svg";
-import BeautyHubBanner from "../../public/images/beautyhub-banner.svg";
-import LendsqrBanner from "../../public/images/lendsqr-banner.svg";
-import LendsqrLogo from "../../public/images/lendsqrlogo.svg";
+import Card from "@/components/card/card";
+import BeautyHubLogo from "../../../public/images/beautyhub-logo.svg";
+import BeautyHubBanner from "../../../public/images/beautyhub-banner.svg";
+import LendsqrBanner from "../../../public/images/lendsqr-banner.svg";
+import LendsqrLogo from "../../../public/images/lendsqrlogo.svg";
 
 export const projects = [
   {
     iconImage: BeautyHubLogo.src,
-    smallTitle: "WEB DESIGN",
+    title: "WEB DESIGN",
     description:
       "Worlds first scheduling app.",
     image: BeautyHubBanner.src,
@@ -20,7 +19,7 @@ export const projects = [
   },
   {
     iconImage: LendsqrLogo.src,
-    smallTitle: "WEB DESIGN",
+    title: "WEB DESIGN",
     description:
       "Worlds first scheduling app.",
     image: LendsqrBanner.src,
@@ -28,14 +27,15 @@ export const projects = [
   },
   {
     iconImage: BeautyHubLogo.src,
-    smallTitle: "WEB DESIGN",
+    title: "WEB DESIGN",
     description:
       "Worlds first scheduling app.",
     image: BeautyHubBanner.src,
     color: "#FCEBEF",
   },
 ];
-const Offerings = () => {
+
+const Projects = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -91,4 +91,4 @@ const Offerings = () => {
   );
 };
 
-export default Offerings;
+export default Projects;

@@ -4,7 +4,7 @@ import AboutMe from "@/components/aboutme";
 import LetsWorkTogether from "@/components/letsworktogether";
 import Footer from "@/components/footer";
 import ProgrammingLanguages from "@/components/programminglanguages";
-import Offerings from "@/components/sample";
+import Offerings from "@/components/projects/sample";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import styles from "./style.module.scss";
 import { useTransform, motion, useScroll } from "framer-motion";
@@ -7,7 +6,6 @@ import Button from "@/components/button";
 
 const Card = ({
   i,
-  smallTitle,
   title,
   description,
   image,
@@ -25,7 +23,6 @@ const Card = ({
 
   const getCardContent = (
     i,
-    smallTitle,
     title,
     description,
     image,
@@ -42,7 +39,7 @@ const Card = ({
             <Image src={iconImage} width="50" height="50" alt="Project Logo" />
             <div className="mt-10">
               <p className="text-left font-semibold tracking-widest">
-                {smallTitle}
+                {title}
               </p>
               <h6 className="mt-5 text-left">{description}</h6>
               <div className="mt-20 flex w-full justify-left">
@@ -93,7 +90,6 @@ const Card = ({
       >
         {getCardContent(
           i,
-          smallTitle,
           title,
           description,
           image,
