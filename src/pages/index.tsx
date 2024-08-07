@@ -4,7 +4,7 @@ import AboutMe from "@/components/aboutme";
 import LetsWorkTogether from "@/components/letsworktogether";
 import Footer from "@/components/footer";
 import ProgrammingLanguages from "@/components/programminglanguages";
-import Offerings from "@/components/projects/sample";
+import AboutMeSection from "@/components/aboutme-section";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +14,7 @@ export default function Home() {
     <Navbar/>
     <AboutMe/>
     <ProgrammingLanguages/>
+    <AboutMeSection/>
     <LetsWorkTogether/>
     <Footer/>
     </main>
