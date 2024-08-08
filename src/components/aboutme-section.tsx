@@ -52,7 +52,7 @@ const AboutMeSection = () => {
               I have 5+ years of experience in designing world-class websites
               and products.
             </p>
-            <p className="mt-2 mb-6 md:mb-10 text-sm md:text-base text-[#505050]">If you have a project in mind, don't hesitate to reach out.</p>
+            <p className="mt-2 mb-6 md:mb-10 text-sm md:text-base text-[#505050]">If you have a project in mind, don&apos;t hesitate to reach out.</p>
           </div>
           <Button text="Send A Message" ariaLabel="Send A Message" primary />
         </div>
