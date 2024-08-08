@@ -50,7 +50,7 @@ export const partners = [
 
 const Brands = () => {
     return (
-      <div className="mt-40">
+      <div className="mt-40" id="brands">
         <div className="w-full flex justify-center">
         <h6 className="bg-gradient-to-r from-[#FAF8FC] to-[#F4EFFF] border px-4 py-2 rounded-full border-white text-center">
         Trusted by Companies and Partners

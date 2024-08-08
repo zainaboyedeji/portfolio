@@ -3,7 +3,7 @@ import Projects from "./projects/index";
 
 const AboutMe = () => {
   return (
-    <main className="p-6 sm:p-10 md:p-20 mt-10 md:mt-20 text-center bg-gradient-to-r from-[#F4EDFF] to-[#FCEBEF] rounded-2xl sm:rounded-[50px] md:rounded-[80px]">
+    <main className="px-2 py-6 sm:p-10 md:p-20 mt-10 md:mt-20 text-center bg-gradient-to-r from-[#F4EDFF] to-[#FCEBEF] rounded-2xl sm:rounded-[50px] md:rounded-[80px]">
       <div>
         <div className="w-full flex justify-center">
           <h6 className="bg-gradient-to-r from-[#FAF8FC] to-[#F4EFFF] border px-3 py-1 sm:px-4 sm:py-2 rounded-full border-white text-center text-sm sm:text-base">

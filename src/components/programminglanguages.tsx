@@ -34,7 +34,7 @@ const ProgrammingLanguages = () => {
     },
   ];
   return (
-    <main className="mt-40">
+    <main className="mt-40" id="skills">
       <div className="w-full flex justify-center">
         <h6 className="bg-gradient-to-r from-[#FAF8FC] to-[#F4EFFF] border px-4 py-2 rounded-full border-white text-center">
           My Programming Languages 🛠️

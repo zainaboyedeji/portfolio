@@ -24,10 +24,10 @@ const Navbar = () => {
           <span className="font-bold ml-4">ZAINAB</span>
         </div>
         <div className="hidden md:flex justify-center items-center gap-6 w-2/5">
-          <Link href="/">Work</Link>
-          <Link href="/">Tools</Link>
-          <Link href="/">Skills</Link>
-          <Link href="/">Testimonials</Link>
+          <Link href="#projects">Projects</Link>
+          <Link href="#brands">Brands</Link>
+          <Link href="#skills">Skills</Link>
+          <Link href="#testimonials">Testimonials</Link>
           <Link href="/">Blog</Link>
           <Link href="/">
             <Button text="Contact" ariaLabel="Contact Button" primary />
@@ -41,10 +41,10 @@ const Navbar = () => {
       </div>
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center gap-4 py-4">
-          <Link href="/" onClick={toggleMenu}>Work</Link>
-          <Link href="/" onClick={toggleMenu}>Tools</Link>
-          <Link href="/" onClick={toggleMenu}>Skills</Link>
-          <Link href="/" onClick={toggleMenu}>Testimonials</Link>
+          <Link href="#projects" onClick={toggleMenu}>Projects</Link>
+          <Link href="#brands" onClick={toggleMenu}>Brands</Link>
+          <Link href="#skills" onClick={toggleMenu}>Skills</Link>
+          <Link href="#testimonials" onClick={toggleMenu}>Testimonials</Link>
           <Link href="/" onClick={toggleMenu}>Blog</Link>
           <Link href="/" onClick={toggleMenu}>
             <Button text="Contact" ariaLabel="Contact Button" primary />

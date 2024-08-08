@@ -26,9 +26,10 @@ export const projects = [
   {
     iconImage: MooveLogo.src,
     title: "WEB DESIGN",
-    description:"African-Born, Global Mobility Fintech.",
-    image: MooveBanner.src,
-    color: "#FCEBEF",
+    description:
+      "World's first scheduling app.",
+      image: MooveBanner.src,
+      color: "#FCEBEF",
   },
 ];
 
@@ -69,7 +70,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div ref={container} className={`${styles.main} px-4 sm:px-6 lg:px-8`}>
+    <div ref={container} className={`${styles.main} px-4 sm:px-6 lg:px-8`} id="projects">
       <div className="mx-auto max-w-screen-xl">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;

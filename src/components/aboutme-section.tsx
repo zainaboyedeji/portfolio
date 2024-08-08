@@ -39,29 +39,29 @@ const AboutMeSection = () => {
   }, []);
 
   return (
-    <div ref={container} className={`${styles.main} bg-gradient-to-r from-[#FAF8FC] to-[#F4EFFF] p-10 rounded-2xl`}>
+    <div ref={container} className={`${styles.main} bg-gradient-to-r from-[#FAF8FC] to-[#F4EFFF] p-6 md:p-10 rounded-2xl`}>
       <div
         ref={container}
-        className="mx-auto max-w-screen-2xl flex justify-between"
+        className="mx-auto max-w-screen-2xl flex flex-col md:flex-row justify-between"
       >
-        <div>
-          <h6 className="font- text-3xl">Hi I&apos;m Zainab 👋🏿</h6>
-          <div>
-            <p>Software Engineer living in Lagos, Nigeria.</p>
-            <p>
+        <div className="px-4 md:px-10 py-10 md:py-60">
+          <h6 className="text-xl md:text-3xl">Hi I&apos;m Zainab 👋🏿</h6>
+          <div className="mt-4 md:mt-10">
+            <p className="text-sm md:text-base text-[#505050]">Software Engineer living in Lagos, Nigeria.</p>
+            <p className="mt-2 md:mt-2 text-sm md:text-base text-[#505050]">
               I have 5+ years of experience in designing world-class websites
               and products.
             </p>
-            <p>If you have a project in mind, dont hesitate to reach out.</p>
+            <p className="mt-2 mb-6 md:mb-10 text-sm md:text-base text-[#505050]">If you have a project in mind, don't hesitate to reach out.</p>
           </div>
           <Button text="Send A Message" ariaLabel="Send A Message" primary />
         </div>
-        <div>
+        <div className="mt-8 md:mt-0">
           <Image
             className="rounded-2xl"
             src="/images/zainab-image.svg"
-            width="500"
-            height="500"
+            width="400"
+            height="400"
             alt="Zainab Avatar"
           />
         </div>
