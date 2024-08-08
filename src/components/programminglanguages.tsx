@@ -34,15 +34,14 @@ const ProgrammingLanguages = () => {
     },
   ];
   return (
-    <main className="mt-10">
+    <main className="mt-40">
       <div className="w-full flex justify-center">
         <h6 className="bg-gradient-to-r from-[#FAF8FC] to-[#F4EFFF] border px-4 py-2 rounded-full border-white text-center">
           My Programming Languages 🛠️
         </h6>
       </div>
-
       <div>
-        <h1 className="text-3xl font-bold text-center mt-5">
+        <h1 className="text-3xl font-bold text-center mt-10 mb-24">
           These are the programming languages I use everyday
         </h1>
         <div className="mt-10">

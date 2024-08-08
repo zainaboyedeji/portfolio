@@ -3,34 +3,31 @@ import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import Card from "@/components/card/card";
-import BeautyHubLogo from "../../../public/images/beautyhub-logo.svg";
-import BeautyHubBanner from "../../../public/images/beautyhub-banner.svg";
+import MooveLogo from "../../../public/images/moove-logo.svg";
+import MooveBanner from "../../../public/images/moove-banner.svg";
 import LendsqrBanner from "../../../public/images/lendsqr-banner.svg";
 import LendsqrLogo from "../../../public/images/lendsqrlogo.svg";
 
 export const projects = [
   {
-    iconImage: BeautyHubLogo.src,
+    iconImage: MooveLogo.src,
     title: "WEB DESIGN",
-    description:
-      "World's first scheduling app.",
-    image: BeautyHubBanner.src,
+    description:"African-Born, Global Mobility Fintech.",
+    image: MooveBanner.src,
     color: "#FCEBEF",
   },
   {
-    iconImage: LendsqrLogo.src,
+    iconImage: MooveLogo.src,
     title: "WEB DESIGN",
-    description:
-      "World's first scheduling app.",
-    image: LendsqrBanner.src,
-    color: "#F4EDFF",
+    description:"African-Born, Global Mobility Fintech.",
+    image: MooveBanner.src,
+    color: "#FCEBEF",
   },
   {
-    iconImage: BeautyHubLogo.src,
+    iconImage: MooveLogo.src,
     title: "WEB DESIGN",
-    description:
-      "World's first scheduling app.",
-    image: BeautyHubBanner.src,
+    description:"African-Born, Global Mobility Fintech.",
+    image: MooveBanner.src,
     color: "#FCEBEF",
   },
 ];
@@ -44,7 +41,7 @@ const Projects = () => {
 
   useEffect(() => {
     const lenis = new Lenis();
-    function raf(time) {
+    function raf(time:any) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }

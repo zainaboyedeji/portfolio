@@ -40,7 +40,7 @@ const LetsWorkTogether = () => {
     );
   };
   return (
-    <div className="overflow-hidden whitespace-nowrap ">
+    <div className="overflow-hidden whitespace-nowrap mt-20">
       <div className="scrolling-text text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold px-4 sm:px-6 py-2">
         <RepeatedText
           text="Let's Work Together"

@@ -30,21 +30,21 @@ const Card = ({
     iconImage
   ) => {
     return (
-      <div className="mb-8 mt-8 flex h-auto flex-col">
+      <div className="mb-8 mt-8 flex h-auto flex-col border w-full">
         <div
           className="mx-auto grid w-full grid-cols-1 items-center gap-4 rounded-2xl p-4 sm:gap-6 sm:p-6 md:grid-cols-2 md:gap-[2rem] md:p-8"
           style={{ backgroundColor: color }}
         >
           <div>
-            <Image src={iconImage} width="40" height="40" alt="Project Logo" />
+            <Image src={iconImage} width="200" height="200" alt="Project Logo" />
             <div className="mt-6 md:mt-10">
               <p className="text-left font-semibold tracking-widest text-sm md:text-base lg:text-lg">
                 {title}
               </p>
-              <h6 className="mt-3 md:mt-5 text-left text-xs md:text-sm lg:text-base">
+              <h6 className="mt-3 md:mt-5 text-left text-xs md:text-4xl lg:text-4xl font-bold">
                 {description}
               </h6>
-              <div className="mt-10 flex flex-col sm:flex-row justify-start gap-4 md:mt-20">
+              <div className="mt-10 flex flex-col sm:flex-row justify-start gap-4 md:mt-10">
                 <Button
                   text="Visit App"
                   ariaLabel="Visit App Button"
@@ -64,8 +64,8 @@ const Card = ({
               <Image
                 src={image}
                 alt="Booster App"
-                width={400}
-                height={400}
+                width={500}
+                height={500}
                 data-aos="fade-right"
                 dat-aos-delay="500"
                 className="rounded-tl-2xl rounded-tr-2xl md:rounded-br-2xl md:rounded-tr-2xl lg:rounded-br-2xl lg:rounded-tr-2xl"
