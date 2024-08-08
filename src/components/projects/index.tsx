@@ -13,7 +13,7 @@ export const projects = [
     iconImage: BeautyHubLogo.src,
     title: "WEB DESIGN",
     description:
-      "Worlds first scheduling app.",
+      "World's first scheduling app.",
     image: BeautyHubBanner.src,
     color: "#FCEBEF",
   },
@@ -21,7 +21,7 @@ export const projects = [
     iconImage: LendsqrLogo.src,
     title: "WEB DESIGN",
     description:
-      "Worlds first scheduling app.",
+      "World's first scheduling app.",
     image: LendsqrBanner.src,
     color: "#F4EDFF",
   },
@@ -29,7 +29,7 @@ export const projects = [
     iconImage: BeautyHubLogo.src,
     title: "WEB DESIGN",
     description:
-      "Worlds first scheduling app.",
+      "World's first scheduling app.",
     image: BeautyHubBanner.src,
     color: "#FCEBEF",
   },
@@ -44,35 +44,36 @@ const Projects = () => {
 
   useEffect(() => {
     const lenis = new Lenis();
-    function raf(time: number) {
+    function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
 
     requestAnimationFrame(raf);
-  });
- 
-
+  }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", function () {
-        let div = document.getElementById("sticky-div");
-        let rect = div && div.getBoundingClientRect();
-        if (div) {
-          if (rect && rect.top <= 0) {
-            div.style.position = "fixed";
-            div.style.top = "0";
-          } else {
-            div.style.position = "sticky";
-            div.style.top = "0";
-          }
+    const handleScroll = () => {
+      const div = document.getElementById("sticky-div");
+      const rect = div?.getBoundingClientRect();
+      if (div) {
+        if (rect && rect.top <= 0) {
+          div.style.position = "fixed";
+          div.style.top = "0";
+        } else {
+          div.style.position = "sticky";
+          div.style.top = "0";
         }
-      });
-}, []);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div ref={container} className={styles.main}>
-      <div ref={container} className="mx-auto max-w-screen-2xl">
+    <div ref={container} className={`${styles.main} px-4 sm:px-6 lg:px-8`}>
+      <div className="mx-auto max-w-screen-xl">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (

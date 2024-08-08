@@ -30,44 +30,45 @@ const Card = ({
     iconImage
   ) => {
     return (
-      <div className="mb-8 mt-8 flex h-auto flex-col ">
+      <div className="mb-8 mt-8 flex h-auto flex-col">
         <div
-          className="mx-auto grid w-[100%] grid-cols-1 items-center gap-[2rem] rounded-[2rem] md:grid-cols-2 lg:grid-cols-2"
+          className="mx-auto grid w-full grid-cols-1 items-center gap-4 rounded-2xl p-4 sm:gap-6 sm:p-6 md:grid-cols-2 md:gap-[2rem] md:p-8"
           style={{ backgroundColor: color }}
         >
           <div>
-            <Image src={iconImage} width="50" height="50" alt="Project Logo" />
-            <div className="mt-10">
-              <p className="text-left font-semibold tracking-widest">
+            <Image src={iconImage} width="40" height="40" alt="Project Logo" />
+            <div className="mt-6 md:mt-10">
+              <p className="text-left font-semibold tracking-widest text-sm md:text-base lg:text-lg">
                 {title}
               </p>
-              <h6 className="mt-5 text-left">{description}</h6>
-              <div className="mt-20 flex w-full justify-left">
+              <h6 className="mt-3 md:mt-5 text-left text-xs md:text-sm lg:text-base">
+                {description}
+              </h6>
+              <div className="mt-10 flex flex-col sm:flex-row justify-start gap-4 md:mt-20">
                 <Button
                   text="Visit App"
                   ariaLabel="Visit App Button"
-                  className="mr-5"
+                  className="sm:mr-5"
                   primary
                 />
                 <Button
                   text="View Code"
                   ariaLabel="View Code Button"
-                  className=""
                   primary
                 />
               </div>
             </div>
           </div>
-          <div className="order-1 flex items-center justify-end lg:order-2">
-            <div className="relative flex items-center justify-center rounded-tl-[2rem] rounded-tr-[2rem] md:rounded-br-[2rem] md:rounded-tl-[0rem] md:rounded-tr-[2rem] lg:rounded-br-[2rem] lg:rounded-tl-[0rem] lg:rounded-tr-[2rem]">
+          <div className="order-1 flex items-center justify-center md:justify-end lg:order-2">
+            <div className="relative flex items-center justify-center rounded-tl-2xl rounded-tr-2xl md:rounded-br-2xl md:rounded-tl-none md:rounded-tr-2xl lg:rounded-br-2xl lg:rounded-tl-none lg:rounded-tr-2xl">
               <Image
                 src={image}
                 alt="Booster App"
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 data-aos="fade-right"
                 dat-aos-delay="500"
-                className="mx-0 rounded-tl-[2rem] rounded-tr-[2rem] md:rounded-br-[2rem] md:rounded-tr-[2rem] lg:rounded-br-[2rem] lg:rounded-tr-[2rem]"
+                className="rounded-tl-2xl rounded-tr-2xl md:rounded-br-2xl md:rounded-tr-2xl lg:rounded-br-2xl lg:rounded-tr-2xl"
               />
             </div>
           </div>

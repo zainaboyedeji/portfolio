@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md md:shadow-none md:bg-transparent">
       <div className="flex justify-between items-center p-4">
         <div className="flex items-center">
           <Image
