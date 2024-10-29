@@ -59,7 +59,7 @@ const AboutMeSection = () => {
         <div className="mt-8 md:mt-0">
           <Image
             className="rounded-2xl"
-            src="/images/zainab-image.svg"
+            src="/images/zainab-image.jpg"
             width="400"
             height="400"
             alt="Zainab Avatar"
