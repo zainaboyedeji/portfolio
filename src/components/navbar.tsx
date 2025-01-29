@@ -6,24 +6,23 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   return (
-    <nav className="bg-white shadow-md md:shadow-none md:bg-transparent">
-      <div className="flex justify-between items-center p-4">
+    <nav className="fixed top-0 left-0 w-full bg-[#FBFCFF] bg-opacity-40 px-10 py-4 shadow-md z-50">
+      <div className="flex justify-between items-center">
         <div className="flex items-center">
           <Image
             src="/images/avatar.svg"
-            width="50"
-            height="50"
+            width="40"
+            height="40"
             alt="Zainab Avatar"
           />
-          <span className="font-bold ml-4">ZAINAB</span>
+          <span className="font-extrabold ml-4">ZAINAB</span>
         </div>
-        <div className="hidden md:flex justify-center items-center gap-6 w-2/5">
+        <div className="hidden md:flex justify-center items-center gap-6 w-2/5 text-[16px]">
           <Link href="#projects">Projects</Link>
           <Link href="#brands">Brands</Link>
           <Link href="#skills">Skills</Link>

@@ -25,7 +25,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <button
       type="submit"
-      className={`rounded-full px-6 py-2 ${primaryClass} ${className}`}
+      className={`rounded-full px-8 py-2 ${primaryClass} ${className}`}
       aria-label={ariaLabel}
       onClick={onClick}
       disabled={disabled}

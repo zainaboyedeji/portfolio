@@ -5,8 +5,6 @@ import Lenis from "@studio-freight/lenis";
 import Card from "@/components/card/card";
 import MooveLogo from "../../../public/images/moove-logo.svg";
 import MooveBanner from "../../../public/images/moove-banner.svg";
-import LendsqrBanner from "../../../public/images/lendsqr-banner.svg";
-import LendsqrLogo from "../../../public/images/lendsqrlogo.svg";
 
 export const projects = [
   {
@@ -26,8 +24,7 @@ export const projects = [
   {
     iconImage: MooveLogo.src,
     title: "WEB DESIGN",
-    description:
-      "World's first scheduling app.",
+    description:"World's first scheduling app.",
       image: MooveBanner.src,
       color: "#FCEBEF",
   },
@@ -46,7 +43,6 @@ const Projects = () => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
   }, []);
 
@@ -64,13 +60,12 @@ const Projects = () => {
         }
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div ref={container} className={`${styles.main} px-4 sm:px-6 lg:px-8`} id="projects">
+    <div ref={container} className={`${styles.main} mt-32`} id="projects">
       <div className="mx-auto max-w-screen-xl">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;

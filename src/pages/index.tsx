@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
     <WebPageTitle title="Home | Zainab Oyedeji's Portfolio" />
-    <main className="p-6">
     <Navbar/>
+    <main className="p-6">
     <AboutMe/>
     <Brands/>
     <ProgrammingLanguages/>
